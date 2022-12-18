@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carlos Moralejo</title>
+    <link rel="stylesheet" href="reset.css" />
+    <style>
+      body {
+        background-image: url(fruit-basket-agency-caH-ZLrisZA-unsplash.jpg);
+        font-family: Didot, Segoe, "Segoe UI", Optima, "Didot LT STD",
+          "Hoefler Text", Garamond, "Times New Roman", serif;
+        color: #2a2a2a;
+        margin: 0;
+        height: 100%;
+      }
+      @media (min-width: 638px) {
+        body {
+          background-image: url(fruit-basket-agency-caH-ZLrisZA-unsplash2.jpg);
+        }
+      }
+      header {
+        background-color: #f2f2f2;
+        height: 150px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+      }
+      h1 {
+        text-align: center;
+        font-size: 2rem;
+        padding: 20px;
+        font-weight: bold;
+        background: -webkit-linear-gradient(left, #fbab7e, #f7ce68);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      hr.rounded {
+        width: 80px;
+        border-top: 2px solid transparent;
+        border-radius: 1px;
+        background: -webkit-linear-gradient(left, #fbab7e, #f7ce68);
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        padding-top: 50px;
+      }
+      hr.divider2 {
+        margin: 0;
+        padding-bottom: 50px;
+        border-width: 0;
+        border-color: transparent;
+        margin-bottom: -50px;
+        padding-top: 0px;
+        width: 100%;
+        height: 20px;
+        position: absolute;
+        left: 0px;
+        background: linear-gradient(to left top, transparent 49%, #f2f2f2 50%);
+      }
+      .project_container {
+        height: 950px;
+        width: 80%;
+        display: grid;
+        margin: 10px;
+        padding: 30px;
+        grid-template-columns: 100%;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-areas:
+          "first_project"
+          "second_project"
+          "third_project";
+        /*background-color: #f2f2f2;
+              opacity: 1;*/
+        border-radius: 25px;
+        backdrop-filter: blur(20px);
+        transition: 0.5s ease;
+        /*box-shadow: inset 0 1px 3px #84828f;*/
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        &: hover;
+      }
+      .project_container div {
+        padding: 30px;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 25px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      .first_project {
+        grid-area: "first_project";
+      }
+      .second_project {
+        grid-area: "second_project";
+      }
+      .third_project {
+        grid-area: "third_project";
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Projects</h1>
+      <p>Check what I've done</p>
+      <hr class="rounded" />
+    </header>
+    <hr class="divider2" />
+    <main>
+      <section class="project_container">
+        <div class="first_project">
+          <img src="li-zhang-K-DwbsTXliY-unsplash.jpg" />
+        </div>
+        <div class="second_project">
+          <img src="li-zhang-8atj_eBENI8-unsplash.jpg" />
+        </div>
+        <div class="third_project">
+          <img src="nathan-watson-Qerg85B7JDI-unsplash.jpg" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
